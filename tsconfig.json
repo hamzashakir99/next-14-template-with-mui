@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@/app/*": ["./src/app/*"],
+      "@/theme/*": ["./src/theme/*"],
+      "@/types/*": ["./src/types/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/shared-components/*": ["./src/components/shared/*"],
+      "@/redux/*": ["./src/redux/*"],
+      "@/styles/*": ["./src/styles/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/api/*": ["./src/app/api/*"],
+      "@/screens/*": ["./src/app/screens/*"],
+      "@/services/*": ["./src/services/*"],
+      "@/yup-validation/*": ["./src/lib/yup-validation/*"],
+      "@/component-icon/*": ["./src/lib/icons/*"],
+      "@/hooks/*": ["./src/components/hooks/*"],
+      "@/json/*": ["./src/lib/json/*"],
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/message/chat-area/message-type-component/message-type/document.message.tsx"],
+  "exclude": ["node_modules"]
+}
